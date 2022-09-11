@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Verma</title>
+    <link rel="icon" type="image" href="images/code-solid.svg">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/2746dbcf1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Aman-removebg-preview (1).png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web/Software Developer</p>
+                <h1>Hi, I'm <span id="spn">Aman</span><br> Verma From India</h1>
+                <a href="cv/Aman's Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    about me section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I learnt many new technologies and languages. Interested in backend development.Command in PHP
+                        with
+                        knowledge of frontend.Good
+                        understanding of data structures. I learned theoretical and looking for a platform to prove my
+                        skill, so if you hire me I will do the best as I can. </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Good understanding of Java.</li>
+                            <li><span>JavaScript</span><br>Good understanding of JavaScript.</li>
+                            <li><span>Php</span><br>Good understanding of Php</li>
+                            <li><span>Python</span><br>Good understanding of Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            Looking for a platfrom to prove my skiils.
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCA - runnig</span><br>2021-2023<br>Bachelor of Computer Application<br>Makhanlal
+                                Chaturvedi
+                                National University
+                            </li>
+                            <li><span>DCA - 70.29%</span><br>2020-2021<br> Diploma in Computer Application<br>Makhanlal
+                                Chaturvedi
+                                National University
+                            </li>
+                            <li><span>12th Science - 78.6%</span><br>2019-2020<br> Board of Secondary Education, Madhya
+                                Pradesh
+                            </li>
+                            <li><span>10th - 82.5%</span><br>2016-2017<br> Board of Secondary Education, Madhya Pradesh
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- skills section -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Having good understanding of HTML , CSS and JavaScript. And developed some project with this and
+                        also command in php for backend.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                    <h2>Data Structures</h2>
+                    <p>Having good understanding of Data Structures</p>
+                    <a href="#">learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/bank2.png" alt="">
+                    <div class="layer">
+                        <h3>Bank Mangament System</h3>
+                        <p>Bank management system using C++ with normal functionalities like create account ,delete
+                            account, check
+                            balance ,withdraw, deposit and show all account</p>
+                        <a href="https://github.com/Aman0413/Bank-Management-System-using-C-" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculator.jpg" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Simple calculator using HTML , CSS , JavaScript.</p>
+                        <a href="https://github.com/Aman0413/Calculator" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/django.jpg" alt="">
+                    <div class="layer">
+                        <h3>User Authentication</h3>
+                        <p>User authentication using Django.</p>
+                        <a href="https://github.com/Aman0413/Django-Task" target="_blank"><i
+                                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>amanv7404@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-7225090867</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100013954685307" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/AmanVer95261110?t=rnXw82qVHmCfiPYL068YKA&s=09" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/being_aman_o4/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aman-verma-1a459020b" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Aman0413" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" name="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Aman Verma.</p>
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName('tab-links')
+        let tabcontents = document.getElementsByClassName('tab-contents')
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+        // For sidebar menu
+
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbxmhCgmyJxhIRlPDJxzxmZVnY2VFsMaI6fYKlNHsf34TER0aQCiK3bcgjPFDKs_RNEeKA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
